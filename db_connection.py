@@ -9,7 +9,7 @@ class Neo4jConnection:
 
     def __init__(self):
         load_dotenv()
-        self.neo4jUser = os.getenv("NEO4J_USERNAME")
+        self.neo4jUser = os.getenv("3c0dd928")
         self.neo4jPass = os.getenv("NEO4J_PASSWORD")
         self.neo4jUri = os.getenv("NEO4J_URI") or os.getenv("NEO4J_CONNECTION_URI")
 
