@@ -26,19 +26,12 @@ __pycache__/
 *.csv
 """
 
-ENV_TEMPLATE_CONTENT =
 NEO4J_USERNAME="3c0dd928"
 NEO4J_PASSWORD="x3isVAn1xSONM-i_28AjqahOLw_cUGXPpjBjib-i0sc"
 NEO4J_URI="neo4j+s://Freeinstance.databases.neo4j.io"
 NEO4J_CONNECTION_URI="neo4j+s://Freeinstance.databases.neo4j.io"
 
 
-REQUIREMENTS_CONTENT = """neo4j
-python-dotenv
-pandas
-tqdm
-ipykernel
-"""
 
 
 def writeFileIfNeeded(filePath, content, overwrite=False):
