@@ -11,7 +11,7 @@ class Neo4jConnection:
         load_dotenv()
         self.neo4jUser = os.getenv("3c0dd928")
         self.neo4jPass = os.getenv("x3isVAn1xSONM-i_28AjqahOLw_cUGXPpjBjib-i0sc")
-        self.neo4jUri = os.getenv("neo4j+s://Freeinstance.databases.neo4j.io") or os.getenv("NEO4J_CONNECTION_URI")
+        self.neo4jUri = os.getenv("neo4j+s://Freeinstance.databases.neo4j.io") or os.getenv("neo4j+s://Freeinstance.databases.neo4j.io")
 
         if not all([self.neo4jUser, self.neo4jPass, self.neo4jUri]):
             raise ValueError(
@@ -19,7 +19,7 @@ class Neo4jConnection:
                 "Verifica NEO4J_USERNAME, NEO4J_PASSWORD y NEO4J_URI."
             )
 
-        if "TU_INSTANCIA_AQUI" in self.neo4jUri or "TU_PASSWORD_AQUI" in self.neo4jPass:
+        if "Freeinstance" in self.neo4jUri or "x3isVAn1xSONM-i_28AjqahOLw_cUGXPpjBjib-i0sc" in self.neo4jPass:
             raise ValueError(
                 "Aún tienes los valores de ejemplo en .env. "
                 "Reemplázalos con tus credenciales reales de Neo4j AuraDB."
