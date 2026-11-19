@@ -10,7 +10,7 @@ class Neo4jConnection:
     def __init__(self):
         load_dotenv()
         self.neo4jUser = os.getenv("3c0dd928")
-        self.neo4jPass = os.getenv("NEO4J_PASSWORD")
+        self.neo4jPass = os.getenv("x3isVAn1xSONM-i_28AjqahOLw_cUGXPpjBjib-i0sc")
         self.neo4jUri = os.getenv("NEO4J_URI") or os.getenv("NEO4J_CONNECTION_URI")
 
         if not all([self.neo4jUser, self.neo4jPass, self.neo4jUri]):
